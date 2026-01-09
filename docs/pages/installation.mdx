@@ -73,6 +73,11 @@ _Note: Intel Macs automatically run Apple Silicon binaries through Rosetta 2 tra
 If you need to build `enclave` from source:
 
 1. Ensure you have Rust installed (using [rustup](https://rustup.rs/))
+2. Additional Dependencies for Building from Source
+   - **jq** - Command-line JSON processor (required for building EVM fixtures)
+   - **solc** - Solidity compiler version 0.8.21+ (required for compiling contract fixtures)
+   - **anvil** - Foundry's Ethereum development node (required for EVM-related features)
+
 2. Clone the repository
 
 ```bash
